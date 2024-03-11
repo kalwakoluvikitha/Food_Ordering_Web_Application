@@ -1,0 +1,50 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    /* justify-content: center; */
+    /* margin-left: 10%; */
+    border: #a8a4a4 solid 2px;
+ 
+
+  }
+  
+  th {
+    border: 3px solid #c0baba;
+    text-align: left;
+    padding: 3px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #a8a4a4;
+  }
+  
+  #food{
+    border-right: 225px solid white;
+  
+    text-align: left;
+    padding: 8px;
+  }
+
+  #quantity{
+   
+    border-right: 475px solid white;
+  
+    text-align: left;
+    padding: 8px;
+   
+  }
+  #totalprize{
+    border-right: 350px;
+    text-align: left;
+    padding: 8px;
+   
+  }
+
+  .container{
+    border: 2px solid brown;
+
+    
+
+  }
+  

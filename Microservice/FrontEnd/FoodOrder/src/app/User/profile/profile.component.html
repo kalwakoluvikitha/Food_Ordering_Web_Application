@@ -1,0 +1,171 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+
+<div class="navbar">
+    <nav>
+      <ul>
+        <li (click)="navigateTo('home')">Home</li>
+        <li (click)="navigateTo('edit')">Edit profile</li>
+        <li (click)="navigateTo('order')">Orders</li>
+      </ul>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+
+
+  <div class="container"   *ngIf="edit">
+    &nbsp;
+         <form  (ngSubmit)="OnSubmit(myform)"  class="forms" style="margin-left: 10%; float: left;" #myform="ngForm">
+            <label class="form-label" for="form3Example1c">Your Name</label>        
+            <input type="text" id="form3Example1c" class="form-control"  name="user.userName" ngModel required   #fname="ngModel" [(ngModel)]="user.userName"  />
+                          
+                          
+                         
+                            
+                            <div>
+                                <span    *ngIf="fname.touched && fname.invalid" >this fied is required</span></div>
+                        
+        
+                                <label class="form-label" for="form3Example3c">Your Email</label>
+                            <input type="email" id="form3Example3c" class="form-control" name="user.email" ngModel required  email    [(ngModel)]="user.email"/>
+                           
+                          
+      
+                            <label class="form-label" for="form3Example4c">Password</label>
+                            <input type="password" id="form3Example4c" class="form-control" name="user.password"  ngModel required  #password="ngModel" [(ngModel)]="user.password" />
+                          
+                          
+      
+                            <label class="form-label" for="form3Example4cd">Repeat your password</label>
+                            <input type="password" id="form3Example4cd" class="form-control"  name="repassword"  ngModel  required   #frepass="ngModel" [(ngModel)]="user.password" />
+                           
+                            <div>
+                                <span    *ngIf="frepass.touched && frepass.invalid  " >this fied is required</span></div>
+                 
+                         
+                          <div>
+                            <span  *ngIf="frepass.value!==password.value      && frepass.touched"   >passwords dont match</span>
+                          </div>
+                         
+
+                        
+                          <label class="form-label" for="form3Example4cd">Address</label>
+                              <input type="text" id="form3Example40cd"   name="user.address"   class="form-control" ngModel  required  [(ngModel)]="user.address"/>
+                             
+                           
+      
+                          
+                              &nbsp;
+                              &nbsp;
+                              &nbsp;
+                              &nbsp;
+                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                          <button type="submit" class="btn btn-primary btn-lg" [disabled]="!myform.valid"  >Submit</button>
+                          <!-- <button type="submit" class="btn btn-primary btn-lg" [disabled]="!myform.valid"  >Register</button> -->
+
+                        </div>
+      
+                      </form>
+      
+                       </div>
+                    <!-- <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+      
+                      <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp"
+                        class="img-fluid" alt="Sample image">
+      
+                    </div>  -->
+                 
+
+
+
+ 
+
+  
+  <div class="containerr"  *ngIf="order">
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ <div     class="grid-container">
+
+  <div *ngFor="let i of group "   style="background-color: rgb(218, 184, 184);" class="grid-item">
+      
+
+    <!-- <table>
+      <tr>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr> -->
+
+     
+
+    <div *ngFor="let  j of i.placedOrders ">
+
+     
+      <!-- <tr>
+        <th>Food</th>
+        <th>Quantity</th>
+        <th>Total</th>
+      </tr> -->
+
+      <h6>{{j.quantity}}  x {{j.foodName}}   -                  {{j.totalprice}}  </h6>
+      <!-- <p>{{j.foodName}}          {{j.quantity}}        {{j.totalprice}}</p> -->
+       <!-- <tr>
+        <td>{{j.foodName}}</td>
+        <td>{{j.quantity}}</td>
+        <td>{{j.totalprice}}</td>
+       </tr> -->
+
+    </div>
+
+     <!-- </table> -->
+        
+    
+        <!-- <h6><i>{{j.foodName}}</i></h6>
+        <h6><i>{{j.quantity}}</i></h6>
+        <h6><i>{{j.totalprice}}</i></h6> -->
+      
+      <hr>
+
+
+      <h5   >Total Bill :{{i.orderAmount}}</h5>
+      <h6>{{i.date |  date: 'dd/MM/yyyy'}}</h6>
+                </div>
+               
+        </div>
+
+
+
+        <!-- <button class="btn danger"    (click)="add(f.foodId)">Add</button> -->
+
+      <!-- <img [src]="f.image"   class="imagefood"   style="align-items: center;">
+      <h5><i>{{f.foodName}}</i></h5>
+      <h3><i>{{f.price}}</i></h3>
+       -->
+     
+  
+  <!-- <button   class="btn btn-primary" (click)="addfood()"    > <h2>+ </h2>Add Food </button> -->
+
+     
+</div>
+
+
+
+
+
+
+
+    
+    
+      

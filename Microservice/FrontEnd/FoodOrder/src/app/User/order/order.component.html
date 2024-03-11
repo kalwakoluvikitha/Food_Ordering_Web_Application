@@ -1,0 +1,103 @@
+<button  class="btn btn-danger"  (click)="back()">
+
+  Back
+</button>
+
+<div  class="container">
+    <h1> Order:Summary Receipt</h1>
+   <h4> <span style="font-size: large;"> OrderId  </span>:       {{order.orderId}}</h4>
+   <h4> <span style="font-size: large;"> CustomerName </span>:      {{user.userName}}</h4>
+   <h4> <span style="font-size: large;"> Billing Address  </span>:       {{address}}</h4>
+
+    <!-- <span>CustomerName:<h3>{{user.userName}}</h3></span>
+    <span>Billing Address:<h5>{{address}}</h5></span> -->
+    
+    <!-- <table>
+      <tr>
+        <th>Food</th> 
+        <th>Quantity</th>
+
+        <th>Total</th>
+      </tr>
+      <tr>
+    <span *ngFor="let c of order.orderItems">
+    
+    <td >   {{c.quantity}}</td>
+    <td> {{c.totalprice}}</td>
+  
+  </span>
+</tr>
+
+      </table>
+  -->
+
+   
+
+
+  
+
+
+
+
+
+
+
+
+
+ <table class="center">
+    <tr>
+  <th>
+    Food
+  </th>
+  <th>
+    Quantity
+  </th>
+  <th>
+    Total
+  </th>
+</tr>
+ </table>
+ <table>
+     <div *ngFor="let c of order.orderItems">
+        <tr>
+     <td id="food">  
+        <div  *ngFor="let f of food">
+         <div  *ngIf="f.foodId==c.foodId">
+        {{f.foodName}} 
+        </div>
+        </div>
+    </td> 
+    
+     <td  id="quantity">    {{c.quantity}}</td>
+
+      
+
+
+
+     <td id="totalprice"> 
+      {{c.totalprice}}</td>
+    </tr>
+
+     </div>
+
+    
+    
+   
+
+
+ </table>
+
+
+
+
+
+
+
+<div>
+
+    <h3> Total Bill: {{order.orderAmount}}</h3>
+    
+</div>
+
+</div>
+

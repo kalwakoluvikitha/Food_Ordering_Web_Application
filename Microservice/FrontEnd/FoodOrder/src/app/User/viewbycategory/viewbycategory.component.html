@@ -1,0 +1,91 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-red" id="navbar">
+  <a class="navbar-brand" href="#">Zibbie</a>
+ 
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search"  size="40"  style="justify-content: center;"  placeholder="Search" aria-label="Search">
+      
+    </form>
+  
+</nav>
+<div  class="addedtocartt"  *ngIf="Display">
+  <h6 (click)="close()"  class="close">x</h6>
+  <h5 class="count" >{{count}}  iteams added To cart    <button   class="btn success"  (click)="viewcart()">viewcart</button></h5>
+  
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curved Edges Grid</title>
+  
+</head>
+
+<div>
+  <button  (click)="vegonly()"  class="btn btn-outline-success" >Pure Veg </button>
+</div>
+<body>
+
+  <div     class="grid-container">
+    <div *ngFor="let f of food"   class="grid-item">
+        
+        <img [src]="f.image"   class="imagefood"   style="align-items: center; width: 280px; height: 200px;   ">
+      
+          <h5><i>{{f.foodName}}</i></h5>
+          <h5><i>&#8377;{{f.price}}</i></h5>
+       
+          <div  *ngFor="let r of restaurant"   >
+                  <div  *ngIf="f.restId==r.restId">
+               <h6>     <i class="bi bi-geo-alt-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>   <i>{{r.restName}},{{r.location}}</i></h6>
+                  
+                  </div>
+          
+          </div>
+
+
+
+          <button class="btn danger"    (click)="add(f.foodId)">Add</button>
+
+        <!-- <img [src]="f.image"   class="imagefood"   style="align-items: center;">
+        <h5><i>{{f.foodName}}</i></h5>
+        <h3><i>{{f.price}}</i></h3>
+         -->
+       
+    </div>
+    <!-- <button   class="btn btn-primary" (click)="addfood()"    > <h2>+ </h2>Add Food </button> -->
+
+       
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+<!-- <div *ngFor="let f of food"   >
+<div class="card" style="width: 18rem;">
+  <img [src]="f.image"   class="imagefood"   style="align-items: center;">
+  <div class="card-body">
+    <h5><i>{{f.foodName}}</i></h5>
+    <h3><i>{{f.price}}</i></h3>
+  </div>
+</div>
+</div>
+
+ -->

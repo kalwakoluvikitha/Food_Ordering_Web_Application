@@ -1,0 +1,124 @@
+#navbar{
+  background-color: rgb(199, 8, 8);
+}
+.navbar-brand{
+  color: #f8f0f0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(63, 66, 65);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .grid-item {
+    flex: 0 0 20%; /* Adjust the width as needed */
+    margin: 5px;
+    padding: 5px;
+    /* border: 1px solid #ccc; */
+  }
+  .image{
+    width:  50%;
+    height: 50%;
+    border-radius: 50%;
+  }
+  h3{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   justify-content: center;
+  }
+
+  #addrest{
+    text-align: center;
+  }
+  #wom
+  {
+    text-align: center;
+  }
+  .logoimg{
+    width: 40px;
+    height: 40px;
+  }
+ 
+
+  .scroll-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    overflow-x: auto;
+    padding: 16px;
+  }
+  
+  .scroll-content {
+    display: flex;
+    /* Set a width larger than the sum of all items to enable horizontal scrolling */
+    width: 200%;
+  }
+  
+  .item {
+    /* flex: 0 0 20%;  */
+    /* flex: 0 0 auto; */
+    min-width: 200px;
+    background-color: #f0f0f0;
+    padding: 16px;
+    border-radius: 8px;
+    border: 5px solid white;
+
+  }
+  .grid-containerr {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(63, 66, 65);
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  .grid-itemm {
+    flex: 0 0 20%; /* Adjust the width as needed */
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  .imagee{
+    width:  5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+  .restimg{
+    /* width:100%;
+    height:100%; */
+    aspect-ratio: 2/1;
+    object-fit: cover;
+  }
+  /* your.component.css */
+/* Style the button and dropdown content */
+/* your.component.css */
+/* Style the logo and dropdown content */
+.logo {
+  cursor: pointer;
+}
+
+/* .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} */
+.dropdown{
+  margin-top: 10%;
+ margin-left: 30%;
+
+
+}

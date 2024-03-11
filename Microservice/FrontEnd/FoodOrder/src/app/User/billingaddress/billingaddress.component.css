@@ -1,0 +1,21 @@
+.container{
+    margin-left: 35%;
+    align-self: center;
+    height:400px;
+    width: 400px;
+    border:  5px solid rgb(224, 218, 218);
+}
+
+#usd{
+
+   width: 350px;
+   height: 50px;
+}
+.btn {
+    background-color: antiquewhite;
+    border: 2px solid brown;
+}
+
+.order{
+    background-color: rgb(202, 42, 42);
+}

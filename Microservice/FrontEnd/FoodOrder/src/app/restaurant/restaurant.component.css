@@ -1,0 +1,25 @@
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .grid-item {
+    flex: 0 0 20%; /* Adjust the width as needed */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+  }
+  .image{
+    width:  70%;
+    height: 50%;
+  }
+  h1{
+    text-shadow: #ccc;
+  }
+
+  #addrest{
+    text-align: center;
+  }

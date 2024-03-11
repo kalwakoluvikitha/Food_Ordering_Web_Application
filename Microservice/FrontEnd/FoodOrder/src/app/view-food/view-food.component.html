@@ -1,0 +1,50 @@
+<!-- <p>view-food works!</p>
+
+<div   *ngFor="let f of food">
+<h1>{{f.foodName}}</h1>
+<h1>{{f.price}}</h1>
+
+
+</div>
+<div  *ngfor="let c of category"  >
+<h1>{{c}}</h1>
+
+</div> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curved Edges Grid</title>
+  
+</head>
+<body> -->
+
+  <div     class="grid-container">
+    <div *ngFor="let f of food"   class="grid-item">
+        
+        <img [src]="f.image"   class="imagefood"   >
+        <h5><i>{{f.foodName}}</i></h5>
+        <h4><i>{{f.price}}</i></h4>
+        
+       
+    </div>
+
+    <div  id="addrest"    class="grid-item">
+    <button   class="btn btn-primary" (click)="addfood()"    > <h2>+ </h2>Add Food </button>
+
+       </div>
+  </div>
+
+<!-- </body>
+</html> -->
+
+
+
+
+
+
+
+
+

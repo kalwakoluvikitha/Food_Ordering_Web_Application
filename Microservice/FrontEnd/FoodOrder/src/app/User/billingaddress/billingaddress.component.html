@@ -1,0 +1,31 @@
+<p>billingaddress works!</p>
+
+
+<div  class="container">
+
+    &nbsp;
+ <div>
+    <input type="address" class="form-control" id="address" aria-describedby="emailHelp" placeholder="Add address" [(ngModel)]="address" >
+
+ </div>
+ &nbsp;
+ &nbsp;
+ &nbsp;
+ <div>
+  <h4  style="color: brown;">Saved Address</h4>
+
+
+  <button  id="usd" class="btn danger"  (click)="useraddress()" >     {{user.address}}        </button>
+  <h4></h4>
+     
+
+  <button  class="btn danger" style="background-color: rgb(206, 47, 47);  margin-left: 40%;" (click)="order()">Order</button>
+ </div>
+ 
+    
+
+
+
+
+
+</div>

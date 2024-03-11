@@ -1,0 +1,114 @@
+/* styles.css or your component-specific CSS */
+/* .vertical-nav {
+    display: flex;
+    height: 100vh;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background-color: #555;
+  } */
+  nav{
+    background-color: #333;
+    padding: 10px;
+    width: 100%;
+  }
+  li{
+   display: inline;
+   color: white;
+   padding: 10px;
+   cursor: pointer;
+   margin-left: 200px;
+  }
+
+  .container{
+    border: 1px solid brown;
+    border: 5px solid;
+    /* margin: auto; */
+    margin-left: 30%;
+    width: 50%;
+    padding: 10px;
+
+  }
+  /* input{
+    size: 50%;
+  } */
+  /* form{
+    margin-left: 10%;
+  } */
+  /* your.component.css */
+.container {
+    display: flex;
+  }
+  
+  .form-container {
+    flex: 1; /* Take up all available space in the container */
+    padding: 20px;
+    border: 1px solid #ddd; /* Optional: add a border for separation */
+  }
+  
+  .other-content {
+    flex: 1; /* Take up all available space in the container */
+    padding: 20px;
+    border: 1px solid #ddd; /* Optional: add a border for separation */
+  }
+  
+  forms{
+    margin-left: 50%;
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    /* margin-left: 20%; */
+
+}
+   */
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 500px);
+    background-color: rgb(224, 34, 34)(255, 0, 0);
+  }
+  
+  .grid-item {
+    flex: 0 0 20%; /* Adjust the width as needed */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid brown;
+    background-color: rgb(236, 70, 70)s;
+    border-radius: 15px;
+    box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+
+  }
+
+  h6{
+    font-size: medium;
+  }
+  

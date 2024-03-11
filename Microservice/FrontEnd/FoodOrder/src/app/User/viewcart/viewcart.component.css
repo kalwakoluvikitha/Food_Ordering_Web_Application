@@ -1,0 +1,76 @@
+.container{
+    display: flex;
+
+
+    height: 150px;
+    width: 800px;
+    background-color: rgba(56, 50, 50, 0.034);
+    border: 4px solid white;
+
+
+}
+
+
+#order{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20%;
+    height: 50px;
+    width: 800px;
+   
+    border: 4px solid white;
+    
+}
+.img-fluid{
+   
+    
+   height: 70%;
+   width: 50%;
+  margin-left: 50%;
+  
+  object-fit: cover;
+  border-radius: 25%;
+ 
+
+    
+}
+.danger {
+   
+    border-color: #f44336;
+    color: red;
+    background-color: #f0c8c5;
+    margin-left: 60%;
+   
+ 
+}
+.dangerr
+{
+    border-color: #f44336;
+    color: red;
+    background-color: #f0c8c5;
+    
+}
+.data{
+   /* float: left; */
+    flex: 1;
+
+}
+.image{
+    /* float: right; */
+     flex: 1;
+}
+/* .flex-parent {
+    display: flex;
+
+    height: 150px;
+    width: 900px;
+    background-color: rgba(240, 248, 255, 0.363);
+    
+    margin-right: 10%;
+
+
+  }
+  .flex-child {
+    flex: 1;
+  } */
